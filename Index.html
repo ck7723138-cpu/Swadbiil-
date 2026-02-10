@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SwadBill - Restaurant Billing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🍽️ SwadBill</h1>
+  <p>Simple Restaurant Billing System</p>
+
+  <div class="menu">
+    <button onclick="addItem('Parota',20)">Parota ₹20</button>
+    <button onclick="addItem('Chicken Biryani',180)">Chicken Biryani ₹180</button>
+    <button onclick="addItem('Veg Biryani',150)">Veg Biryani ₹150</button>
+    <button onclick="addItem('Coke',40)">Coke ₹40</button>
+    <button onclick="addItem('Water Bottle',20)">Water ₹20</button>
+  </div>
+
+  <h2>🧾 Bill</h2>
+  <ul id="billList"></ul>
+
+  <h3>Total: ₹<span id="total">0</span></h3>
+
+  <button onclick="sendBill()">Send Bill on WhatsApp</button>
+  <button onclick="window.print()">Print Bill</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
